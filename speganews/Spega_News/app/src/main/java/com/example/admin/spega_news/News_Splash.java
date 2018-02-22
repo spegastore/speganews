@@ -25,5 +25,6 @@ public class News_Splash extends AppCompatActivity {
             }
         };
         Runsplash.schedule(Showsplash,Delay);
+        //By Ragsh
     }
 }
