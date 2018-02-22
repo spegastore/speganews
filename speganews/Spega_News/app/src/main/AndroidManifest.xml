@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.spega_news">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="SPEGA NEWS"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".News_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".News_Select_Language"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+        />
+        <activity android:name=".News_Arabi" />
+        <activity android:name=".News_Description" />
+        <activity android:name=".News_Menu_Arabi"
+          />
+        <activity android:name=".News_Choose_Language" />
+        <activity android:name=".News_FromArabi" />
+        <activity android:name=".News_Bengali" />
+        <activity android:name=".News_Menu_Bengali" />
+        <activity android:name=".News_FromBengali" />
+        <activity android:name=".News_China" />
+        <activity android:name=".News_Menu_China" />
+        <activity android:name=".News_FromChina" />
+        <activity android:name=".News_English" />
+        <activity android:name=".News_Menu_English" />
+        <activity android:name=".News_FromEnglish" />
+        <activity android:name=".News_French" />
+        <activity android:name=".News_Menu_French" />
+        <activity android:name=".News_FromFrench" />
+        <activity android:name=".News_Hebrew" />
+        <activity android:name=".News_FromHebrew" />
+        <activity android:name=".News_Menu_Hebrew" />
+        <activity android:name=".News_Hindi" />
+        <activity android:name=".News_Menu_Hindi" />
+        <activity android:name=".News_FromHindi" />
+        <activity android:name=".News_Japanese" />
+        <activity android:name=".News_FromJapanese" />
+        <activity android:name=".News_Menu_Japanese" />
+        <activity android:name=".News_Malayalam" />
+        <activity android:name=".News_Menu_Malayalam" />
+        <activity android:name=".News_FromMalayalam" />
+        <activity android:name=".News_Marati" />
+        <activity android:name=".News_Menu_Marati" />
+        <activity android:name=".News_FromMarati" />
+        <activity android:name=".News_Russia" />
+        <activity android:name=".News_Menu_Russia" />
+        <activity android:name=".News_FromRussia" />
+        <activity android:name=".News_Spanish" />
+        <activity android:name=".News_Menu_Spanish" />
+        <activity android:name=".News_FromSpanish" />
+        <activity android:name=".News_Tamil" />
+        <activity android:name=".News_Menu_Tamil"
+            android:theme="@style/AppTheme.Customestyle">
+        </activity>
+        <activity android:name=".News_FromTamil" />
+        <activity android:name=".News_Telungu" />
+        <activity android:name=".News_Menu_Telungu" />
+        <activity android:name=".News_FromTelungu" />
+        <activity android:name=".News_Turki" />
+        <activity android:name=".News_Menu_Turki" />
+        <activity android:name=".News_FromTurki" />
+        <activity android:name=".News_Desc_Japanese" />
+        <activity android:name=".News_Kannada" />
+        <activity android:name=".News_Menu_Kannada" />
+        <activity android:name=".News_FromKannada"></activity>
+    </application>
+
+</manifest>

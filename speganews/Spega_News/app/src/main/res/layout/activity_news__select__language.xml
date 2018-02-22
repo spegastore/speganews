@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_bg"
+    tools:context="com.example.admin.spega_news.News_Select_Language">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:background="#FFFFFF"/>
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#000000"/>
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:text="Choose Language"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_arabic"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="ا"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arabic"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_arabic"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_bengali"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="ধা"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bengali"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_bengali"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/button_chinese"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="ಸಿ"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chinese"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_chinese"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_english"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="E"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_english"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_french"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="F"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="French"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_french"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+
+                    >
+                    <Button
+                        android:id="@+id/button_hebrew"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="ח"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hebrew"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_hebrew"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_hindi"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="हि"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hindi"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_hindi"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_japanese"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="J"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Japanese"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_japanese"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_kannada"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="ಕೆ"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kannada"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_kannada"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_malayalam"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="മ"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malayalam"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_malayalam"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_marati"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="म"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marathi"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_marati"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_russian"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="р"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Russian"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_russian"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_spanish"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="S"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spanish"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_spanish"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_tamil"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="ஆ"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tamil"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_tamil"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_telungu"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="తె"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telugu"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_telungu"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <Button
+                        android:id="@+id/button_turkish"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="Tü"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_button"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turkish"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/textview_lng_turkish"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:text="Copyright © 2018 Spega News. All
+                               Rights Reserved"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
